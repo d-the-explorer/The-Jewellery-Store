@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About - The Jewellery Store</title>
+    <link rel="stylesheet" href="../css/styles.css">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <div class="logo">
+                <h1>✨ The Jewellery Store</h1>
+            </div>
+            <ul class="nav-menu">
+                <li><a href="../index.html" class="nav-link">Home</a></li>
+                <li><a href="shop.html" class="nav-link">Shop</a></li>
+                <li><a href="about.html" class="nav-link active">About</a></li>
+                <li><a href="contact.html" class="nav-link">Contact</a></li>
+                <li><a href="#" class="nav-link cart-icon" onclick="toggleCart(event)">
+                    <span id="cart-count" class="cart-badge">0</span> 🛍️
+                </a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- Page Header -->
+    <section class="page-header">
+        <h1>About Our Family</h1>
+        <p>Generations of passion and mastery in jewellery craftsmanship</p>
+    </section>
+
+    <!-- Main Content -->
+    <div class="container page-content">
+        <!-- Story Section -->
+        <section class="story-section">
+            <h2>Our Story</h2>
+            <p>
+                For over 40 years, The Jewellery Store has been a beacon of excellence in fine jewellery. 
+                What began as a small workshop has blossomed into a renowned destination for luxury handcrafted pieces.
+            </p>
+            <p>
+                Our family has dedicated itself to preserving traditional craftsmanship while embracing 
+                contemporary design. Each piece tells a story of dedication, creativity, and an unwavering 
+                commitment to quality.
+            </p>
+        </section>
+
+        <!-- Values Section -->
+        <section class="values-section">
+            <h2>Our Values</h2>
+            <div class="values-grid">
+                <div class="value-card">
+                    <h3>Quality</h3>
+                    <p>We never compromise on materials or craftsmanship. Every piece undergoes rigorous quality checks.</p>
+                </div>
+                <div class="value-card">
+                    <h3>Integrity</h3>
+                    <p>Transparent pricing and honest communication are the foundations of our relationships with customers.</p>
+                </div>
+                <div class="value-card">
+                    <h3>Creativity</h3>
+                    <p>Our designers push boundaries to create timeless pieces that transcend trends.</p>
+                </div>
+                <div class="value-card">
+                    <h3>Heritage</h3>
+                    <p>We respect traditional techniques while innovating for the modern jewellery enthusiast.</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Team Section -->
+        <section class="team-section">
+            <h2>Meet Our Craftsmen</h2>
+            <div class="team-grid">
+                <div class="team-member">
+                    <div class="member-avatar">👨‍🎨</div>
+                    <h3>Master Craftsman</h3>
+                    <p>50+ years of experience in jewellery design and creation</p>
+                </div>
+                <div class="team-member">
+                    <div class="member-avatar">👩‍🎨</div>
+                    <h3>Lead Designer</h3>
+                    <p>Contemporary design with Classical influences and modern aesthetics</p>
+                </div>
+                <div class="team-member">
+                    <div class="member-avatar">🎓</div>
+                    <h3>Gemologist</h3>
+                    <p>Certified gemologist ensuring authenticity and quality of every stone</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Certifications Section -->
+        <section class="certifications-section">
+            <h2>Certifications & Recognition</h2>
+            <div class="certifications-list">
+                <div class="cert-item">✓ Certified by International Jewellery Association</div>
+                <div class="cert-item">✓ Member of Fine Art & Artisan Association</div>
+                <div class="cert-item">✓ ISO 9001 Quality Management System</div>
+                <div class="cert-item">✓ Ethical Sourcing and Fair Trade Practices</div>
+            </div>
+        </section>
+    </div>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h4>The Jewellery Store</h4>
+                    <p>Family-run luxury jewellery since 1985</p>
+                </div>
+                <div class="footer-section">
+                    <h4>Quick Links</h4>
+                    <ul>
+                        <li><a href="../index.html">Home</a></li>
+                        <li><a href="shop.html">Shop</a></li>
+                        <li><a href="about.html">About</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>Contact</h4>
+                    <p>Email: info@jewellerystore.com</p>
+                    <p>Phone: +1 (555) 123-4567</p>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2026 The Jewellery Store. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Shopping Cart Sidebar -->
+    <div id="cart-sidebar" class="cart-sidebar">
+        <div class="cart-header">
+            <h3>Shopping Cart</h3>
+            <button onclick="toggleCart()" class="close-btn">&times;</button>
+        </div>
+        <div id="cart-items" class="cart-items">
+            <p class="empty-message">Your cart is empty</p>
+        </div>
+        <div class="cart-footer">
+            <div class="cart-total">
+                <strong>Total:</strong>
+                <span id="cart-total">$0.00</span>
+            </div>
+            <button onclick="checkout()" class="btn btn-primary btn-full">Proceed to Checkout</button>
+        </div>
+    </div>
+
+    <div id="cart-overlay" class="cart-overlay" onclick="toggleCart()"></div>
+
+    <script src="../js/products.js"></script>
+    <script src="../js/cart.js"></script>
+    <script src="../js/main.js"></script>
+</body>
+</html>

@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact - The Jewellery Store</title>
+    <link rel="stylesheet" href="../css/styles.css">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <div class="logo">
+                <h1>✨ The Jewellery Store</h1>
+            </div>
+            <ul class="nav-menu">
+                <li><a href="../index.html" class="nav-link">Home</a></li>
+                <li><a href="shop.html" class="nav-link">Shop</a></li>
+                <li><a href="about.html" class="nav-link">About</a></li>
+                <li><a href="contact.html" class="nav-link active">Contact</a></li>
+                <li><a href="#" class="nav-link cart-icon" onclick="toggleCart(event)">
+                    <span id="cart-count" class="cart-badge">0</span> 🛍️
+                </a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- Page Header -->
+    <section class="page-header">
+        <h1>Get In Touch</h1>
+        <p>We love to hear from our customers</p>
+    </section>
+
+    <!-- Contact Section -->
+    <div class="container page-content">
+        <div class="contact-wrapper">
+            <!-- Contact Form -->
+            <section class="contact-form-section">
+                <h2>Send us a Message</h2>
+                <form id="contact-form" class="contact-form" onsubmit="handleContactForm(event)">
+                    <div class="form-group">
+                        <label for="name">Your Name *</label>
+                        <input type="text" id="name" name="name" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="email">Email Address *</label>
+                        <input type="email" id="email" name="email" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="phone">Phone Number</label>
+                        <input type="tel" id="phone" name="phone">
+                    </div>
+                    <div class="form-group">
+                        <label for="subject">Subject *</label>
+                        <select id="subject" name="subject" required>
+                            <option value="">Select a subject</option>
+                            <option value="general">General Inquiry</option>
+                            <option value="custom">Custom Design</option>
+                            <option value="repair">Repair & Maintenance</option>
+                            <option value="appraisal">Appraisal</option>
+                            <option value="other">Other</option>
+                        </select>
+                    </div>
+                    <div class="form-group">
+                        <label for="message">Message *</label>
+                        <textarea id="message" name="message" rows="5" required></textarea>
+                    </div>
+                    <button type="submit" class="btn btn-primary">Send Message</button>
+                    <p class="form-note" id="form-message" style="display:none;"></p>
+                </form>
+            </section>
+
+            <!-- Contact Information -->
+            <aside class="contact-info-section">
+                <h2>Contact Information</h2>
+                
+                <div class="info-block">
+                    <h3>📍 Address</h3>
+                    <p>123 Luxury Avenue<br>New York, NY 10001<br>United States</p>
+                </div>
+
+                <div class="info-block">
+                    <h3>📞 Phone</h3>
+                    <p><a href="tel:+15551234567">+1 (555) 123-4567</a></p>
+                    <p>Mon - Sat: 10am - 6pm EST<br>Sun: 12pm - 5pm EST</p>
+                </div>
+
+                <div class="info-block">
+                    <h3>📧 Email</h3>
+                    <p><a href="mailto:info@jewellerystore.com">info@jewellerystore.com</a></p>
+                    <p>Custom enquiries: <a href="mailto:custom@jewellerystore.com">custom@jewellerystore.com</a></p>
+                </div>
+
+                <div class="info-block">
+                    <h3>🔗 Follow Us</h3>
+                    <div class="social-links">
+                        <a href="#" title="Instagram">📸 Instagram</a>
+                        <a href="#" title="Facebook">👥 Facebook</a>
+                        <a href="#" title="Pinterest">📌 Pinterest</a>
+                    </div>
+                </div>
+
+                <div class="info-block">
+                    <h3>Special Services</h3>
+                    <ul class="services-list">
+                        <li>✓ Custom Design Consultation</li>
+                        <li>✓ Professional Cleaning</li>
+                        <li>✓ Jewellery Repair</li>
+                        <li>✓ Professional Appraisal</li>
+                        <li>✓ Lifetime Maintenance</li>
+                    </ul>
+                </div>
+            </aside>
+        </div>
+
+        <!-- FAQ Section -->
+        <section class="faq-section">
+            <h2>Frequently Asked Questions</h2>
+            <div class="faq-grid">
+                <div class="faq-item">
+                    <h4>Do you offer custom designs?</h4>
+                    <p>Yes! We specialize in custom jewellery design. Contact us to discuss your vision with our master craftsmen.</p>
+                </div>
+                <div class="faq-item">
+                    <h4>What is your return policy?</h4>
+                    <p>We offer a 30-day return policy on all items. Pieces must be in original condition with all documentation.</p>
+                </div>
+                <div class="faq-item">
+                    <h4>How do you ensure authenticity?</h4>
+                    <p>Every piece comes with a certificate of authenticity and is inspected by our certified gemologist.</p>
+                </div>
+                <div class="faq-item">
+                    <h4>Do you offer international shipping?</h4>
+                    <p>Yes, we ship internationally with insurance. Contact us for shipping rates to your location.</p>
+                </div>
+            </div>
+        </section>
+    </div>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h4>The Jewellery Store</h4>
+                    <p>Family-run luxury jewellery since 1985</p>
+                </div>
+                <div class="footer-section">
+                    <h4>Quick Links</h4>
+                    <ul>
+                        <li><a href="../index.html">Home</a></li>
+                        <li><a href="shop.html">Shop</a></li>
+                        <li><a href="about.html">About</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>Contact</h4>
+                    <p>Email: info@jewellerystore.com</p>
+                    <p>Phone: +1 (555) 123-4567</p>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2026 The Jewellery Store. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Shopping Cart Sidebar -->
+    <div id="cart-sidebar" class="cart-sidebar">
+        <div class="cart-header">
+            <h3>Shopping Cart</h3>
+            <button onclick="toggleCart()" class="close-btn">&times;</button>
+        </div>
+        <div id="cart-items" class="cart-items">
+            <p class="empty-message">Your cart is empty</p>
+        </div>
+        <div class="cart-footer">
+            <div class="cart-total">
+                <strong>Total:</strong>
+                <span id="cart-total">$0.00</span>
+            </div>
+            <button onclick="checkout()" class="btn btn-primary btn-full">Proceed to Checkout</button>
+        </div>
+    </div>
+
+    <div id="cart-overlay" class="cart-overlay" onclick="toggleCart()"></div>
+
+    <script src="../js/products.js"></script>
+    <script src="../js/cart.js"></script>
+    <script src="../js/contact.js"></script>
+</body>
+</html>
