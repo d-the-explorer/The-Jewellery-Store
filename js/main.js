@@ -1,7 +1,14 @@
 // Main Page Functionality
 document.addEventListener('DOMContentLoaded', function() {
-    // Load featured products on home page
-    const featuredcontainer = document.getElementById('featured-products');
+    // Highlight current navigation link if possible
+    const currentPage = window.location.pathname.split('/').pop() || 'index.html';
+    const navLink = document.querySelector(`.nav-link[href="${currentPage}"]`);
+    if (navLink) {
+        setActiveNav(navLink);
+    }
+
+    // Load featured products on home page (only if the element exists)
+    const featuredContainer = document.getElementById('featured-products');
     if (featuredContainer) {
         loadFeaturedProducts();
     }
@@ -16,7 +23,9 @@ function loadFeaturedProducts() {
 
     container.innerHTML = featured.map(product => `
         <div class="product-card" onclick="openProductModal(${product.id})">
-            <div class="product-image">${product.emoji}</div>
+            <div class="product-image">
+                ${product.image ? `<img src="${product.image}" alt="${product.name}">` : product.emoji}
+            </div>
             <div class="product-info">
                 <div class="product-category">${product.category}</div>
                 <div class="product-name">${product.name}</div>
@@ -62,7 +71,9 @@ function openProductModal(productId) {
 
     if (!modal || !modalImage || !modalDetails) return;
 
-    modalImage.innerHTML = `<div style="font-size: 5rem;">${product.emoji}</div>`;
+    modalImage.innerHTML = product.image
+        ? `<img src="${product.image}" alt="${product.name}" style="max-width:100%;max-height:100%;">`
+        : `<div style="font-size: 5rem;">${product.emoji}</div>`;
     
     modalDetails.innerHTML = `
         <h3>${product.name}</h3>

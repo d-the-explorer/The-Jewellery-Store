@@ -29,7 +29,9 @@ function displayProducts(productsToDisplay) {
 
     grid.innerHTML = productsToDisplay.map(product => `
         <div class="product-card" onclick="openProductModal(${product.id})">
-            <div class="product-image">${product.emoji}</div>
+            <div class="product-image">
+                ${product.image ? `<img src="${product.image}" alt="${product.name}">` : product.emoji}
+            </div>
             <div class="product-info">
                 <div class="product-category">${product.category}</div>
                 <div class="product-name">${product.name}</div>
@@ -73,7 +75,9 @@ function openProductModal(productId) {
 
     if (!modal || !modalImage || !modalDetails) return;
 
-    modalImage.innerHTML = `<div style="font-size: 5rem;">${product.emoji}</div>`;
+    modalImage.innerHTML = product.image
+        ? `<img src="${product.image}" alt="${product.name}" style="max-width:100%;max-height:100%;">`
+        : `<div style="font-size: 5rem;">${product.emoji}</div>`;
     
     modalDetails.innerHTML = `
         <h3>${product.name}</h3>

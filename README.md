@@ -111,7 +111,7 @@ Then visit `http://localhost:8000`
   - Category (Rings, Necklaces, Bracelets, Earrings)
   - Price point
   - Detailed specifications
-  - Emoji visual representation
+  - **Image URL** (shown on shop and modal) with emoji fallback
 
 ### 📱 Responsive Design
 - Mobile-first approach
