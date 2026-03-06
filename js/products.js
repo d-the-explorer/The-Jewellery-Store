@@ -5,7 +5,7 @@ const products = [
         name: "Diamond Solitaire Ring",
         category: "rings",
         price: 2500000,
-        image: "/img/diamond-solitaire-ring.jpg",
+        image: "/img/diamond-solitare-ring.jpg",
         emoji: "💎💎💎💎",
         description: "Stunning 1.5 carat diamond solitaire ring in 18K white gold. A timeless classic that captures elegance and sophistication.",
         details: "18K White Gold | 1.5 Carat Diamond | GIA Certified | Size 7"
@@ -15,7 +15,7 @@ const products = [
         name: "Pearl Pendant Necklace",
         category: "necklaces",
         price: 890,
-        image: "/img/placeholder.png",
+        image: "/img/pearl-pendant.jpg",
         emoji: "🤍",
         description: "Exquisite South Sea pearl pendant with diamond accents. A sophisticated piece for any occasion.",
         details: "14K Gold | South Sea Pearl | Diamond Accents | 16-18in Chain"

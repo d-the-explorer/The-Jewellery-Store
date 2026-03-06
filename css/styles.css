@@ -125,9 +125,16 @@ body {
    ================================ */
 .hero {
     background: linear-gradient(135deg, var(--dark-color) 0%, var(--accent-color) 100%);
+    background-image: url('/img/hero-image.png');
+    background-size: cover;
+    background-position: center;
     color: white;
     padding: 120px 20px;
     text-align: center;
+    min-height: 900px;
+    display: flex;
+    flex-direction:column; 
+    justify-content: flex-end;
 }
 
 .hero-content h2 {
