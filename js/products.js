@@ -25,7 +25,7 @@ const products = [
         name: "Gold Bangle Bracelet",
         category: "bracelets",
         price: 1200,
-        image: "/img/placeholder.png",
+        image: "/img/gold-bangle-bracelet.jpg",
         emoji: "⭐",
         description: "Classic 14K gold bangle with intricate filigree detailing. Perfect for everyday wear or special occasions.",
         details: "14K Yellow Gold | 7mm Width | 7in Size | Polished Finish"
@@ -35,7 +35,7 @@ const products = [
         name: "Sapphire Stud Earrings",
         category: "earrings",
         price: 1450,
-        image: "/img/placeholder.png",
+        image: "/img/sapphire-stud-earrings.jpg",
         emoji: "💙",
         description: "Beautiful Burmese sapphire studs with diamond halos. Royal blue elegance at its finest.",
         details: "18K White Gold | 2ct Sapphires | 0.5ct Diamonds | GIA Certified"
@@ -45,7 +45,7 @@ const products = [
         name: "Emerald Cocktail Ring",
         category: "rings",
         price: 1950,
-        image: "/img/placeholder.png",
+        image: "/img/emerald-cocktail-ring.jpg",
         emoji: "💚",
         description: "Striking Colombian emerald cocktail ring surrounded by brilliant diamonds.",
         details: "14K Yellow Gold | 3ct Emerald | 1ct Diamonds | Size 7"
@@ -55,7 +55,7 @@ const products = [
         name: "Tennis Bracelet",
         category: "bracelets",
         price: 2800,
-        image: "/img/placeholder.png",
+        image: "/img/tennis-bracelet.jpg",
         emoji: "✨",
         description: "Elegant diamond tennis bracelet with perfectly matched stones. Timeless luxury.",
         details: "18K White Gold | 5ct Total Diamonds | VVS Clarity | 7in"
@@ -65,7 +65,7 @@ const products = [
         name: "Ruby Heart Pendant",
         category: "necklaces",
         price: 1650,
-        image: "/img/placeholder.png",
+        image: "/img/ruby-heart-pendant.jpg",
         emoji: "❤️",
         description: "Passionate ruby heart pendant set in 14K white gold with diamond accents.",
         details: "14K White Gold | 2ct Ruby | 0.3ct Diamonds | 18in Chain"
@@ -75,7 +75,7 @@ const products = [
         name: "Diamond Drop Earrings",
         category: "earrings",
         price: 1100,
-        image: "/img/placeholder.png",
+        image: "/img/diamond-drop-earrings.jpg",
         emoji: "💧",
         description: "Elegant diamond drop earrings with 18K gold setting. Perfect for elegant occasions.",
         details: "18K White Gold | 1.5ct Diamonds | VVS Clarity | Post Backs"
@@ -85,7 +85,7 @@ const products = [
         name: "Vintage Gold Ring",
         category: "rings",
         price: 1350,
-        image: "/img/placeholder.png",
+        image: "/img/vintage-gold-ring.jpg",
         emoji: "👑",
         description: "Vintage-inspired engagement ring with ornate detailing and center stone setting.",
         details: "18K Yellow Gold | Vintage Design | Center Stone Ready | Size 7"
@@ -95,7 +95,7 @@ const products = [
         name: "Aquamarine Necklace",
         category: "necklaces",
         price: 950,
-        image: "/img/placeholder.png",
+        image: "/img/aquamarine-necklace.jpg",
         emoji: "💎",
         description: "Beautiful aquamarine pendant with 14K gold setting. Cool elegance.",
         details: "14K Gold | 2ct Aquamarine | 16-18in Chain | Polished"
@@ -105,7 +105,7 @@ const products = [
         name: "Sapphire Tennis Bracelet",
         category: "bracelets",
         price: 2400,
-        image: "/img/placeholder.png",
+        image: "/img/sapphire-tennis-bracelet.jpg",
         emoji: "💙",
         description: "Alternating sapphire and diamond tennis bracelet in white gold.",
         details: "18K White Gold | 3ct Sapphires | 2ct Diamonds | 7in"
@@ -115,7 +115,7 @@ const products = [
         name: "Opal Earring Set",
         category: "earrings",
         price: 720,
-        image: "/img/placeholder.png",
+        image: "/img/opal-earring-set.jpg",
         emoji: "🌈",
         description: "Stunning opal earrings with matching necklace combo.",
         details: "14K Gold | Australian Opals | Drop Style | Post Backs"
