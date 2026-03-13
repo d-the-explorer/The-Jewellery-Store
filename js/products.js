@@ -124,7 +124,7 @@ const products = [
 
 // Get featured products (first 6)
 function getFeaturedProducts() {
-    return products.slice(0, 6);
+    return products.slice(8, 11);
 }
 
 // Get all products

@@ -163,6 +163,12 @@ Update contact details in `pages/contact.html`, `index.html`, `pages/shop.html`,
 
 This project is open source and available under the MIT License.
 
----
+
+## Notes on improvements
+- Modify store name
+- Change the logo 
+-Change the color theme: Navigation, the hover + active state
+- Change the text overlay on the hero image
+
 
 **Made with ✨ for luxury jewelry retailers**
