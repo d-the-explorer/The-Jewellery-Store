@@ -1,4 +1,4 @@
-# The Jewellery Store - Luxury Jewelry Website
+# Aeterna Jewelry - Luxury Jewelry Website
 
 A beautiful, professional website for a high-end family-run jewelry store built with vanilla HTML, CSS, and JavaScript.
 

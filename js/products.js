@@ -4,9 +4,9 @@ const products = [
         id: 1,
         name: "Diamond Solitaire Ring",
         category: "rings",
-        price: 2500000,
+        price: 25000,
         image: "/img/diamond-solitare-ring.jpg",
-        emoji: "💎💎💎💎",
+        emoji: "💎",
         description: "Stunning 1.5 carat diamond solitaire ring in 18K white gold. A timeless classic that captures elegance and sophistication.",
         details: "18K White Gold | 1.5 Carat Diamond | GIA Certified | Size 7"
     },
@@ -124,7 +124,7 @@ const products = [
 
 // Get featured products (first 6)
 function getFeaturedProducts() {
-    return products.slice(8, 11);
+    return products.slice(0, 4);
 }
 
 // Get all products
