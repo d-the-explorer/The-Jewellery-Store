@@ -8,7 +8,17 @@ class ShoppingCart {
     // Load cart from localStorage
     loadCart() {
         const saved = localStorage.getItem('cart');
-        return saved ? JSON.parse(saved) : [];
+        const items = saved ? JSON.parse(saved) : [];
+        // Ensure all items have image from products
+        items.forEach(item => {
+            if (!item.image) {
+                const prod = getProductById(item.id);
+                if (prod && prod.image) {
+                    item.image = prod.image;
+                }
+            }
+        });
+        return items;
     }
 
     // Save cart to localStorage
@@ -96,7 +106,7 @@ class ShoppingCart {
 
         cartItemsContainer.innerHTML = this.items.map(item => `
             <div class="cart-item">
-                <div class="cart-item-image">${item.emoji}</div>
+                <div class="cart-item-image">${item.image ? `<img src="${item.image}" alt="${item.name}" style="max-width:100%; max-height:100%; object-fit: cover;">` : item.emoji}</div>
                 <div class="cart-item-details">
                     <div class="cart-item-name">${item.name}</div>
                     <div class="cart-item-price">$${item.price.toFixed(2)}</div>
