@@ -125,7 +125,7 @@ body {
    ================================ */
 .hero {
     background: linear-gradient(135deg, var(--dark-color) 0%, var(--accent-color) 100%);
-    background-image: url('/img/hero-image.png');
+    background-image: url('/The-Jewellery-Store/img/hero-image.png');
     background-size: cover;
     background-position: center;
     color: white;
